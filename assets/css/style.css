@@ -42,7 +42,7 @@ a:hover {
 }
 
 .desc {
-	color: #c9d2da;
+	color: #575f66;
 	font-size: 1.8rem;
 	font-weight: 300;
 	line-height: 1.67;
@@ -166,6 +166,7 @@ header {
 }
 
 .hero__desc {
+	color: #c9d2da;
 	padding: 22px 48px 38px 0;
 }
 
@@ -246,6 +247,9 @@ header {
 	gap: 130px;
 }
 
+.service__left {
+}
+
 .service__img--item {
 	width: 570px;
 	height: 570px;
@@ -256,17 +260,39 @@ header {
 .service__item--item1,
 .service__item--item2,
 .service__item--item3 {
+	/* position: relative; */
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+.service__item--icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 10px;
-	padding-top: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	flex-shrink: 0;
+	background-color: #eff6fd;
 }
 
 .service__item--item1:hover,
 .service__item--item2:hover,
 .service__item--item3:hover {
-	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.1);
+}
+
+.service__item--item1:hover .service__item--icon,
+.service__item--item2:hover .service__item--icon,
+.service__item--item3:hover .service__item--icon {
+	color: #fff;
+	background-color: #2e80ce;
 }
 
 .service__action {
@@ -275,4 +301,173 @@ header {
 
 .service__action .btn-primary {
 	padding: 12px 30px;
+}
+
+/* how it works */
+
+.how {
+	margin-top: 170px;
+	background-color: #f6fbff;
+}
+
+.how .raw {
+	padding: 170px 0 116px 0;
+}
+
+.how__heading {
+	display: inline-flex;
+	margin-bottom: 18px;
+}
+
+.how__desc {
+	width: 468px;
+	color: #575f66;
+}
+
+.how__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 62px;
+	padding-top: 86px;
+	/* padding-bottom: 132px; */
+}
+
+.how__item {
+	border: 5px solid #eaf6ff;
+}
+.how__item:hover {
+	box-shadow: 0px 14px 28px 0px rgba(46, 148, 206, 0.5);
+	cursor: pointer;
+	transform: translateY(-20px);
+	transition: 0.3s;
+}
+
+.how__item:hover .how__item--action {
+	color: #2e80ce;
+}
+
+.how__item--content {
+	padding: 43px;
+}
+
+.how__item--heading {
+	padding-top: 20px;
+	padding-bottom: 28px;
+}
+
+.how__item--action {
+	display: block;
+	font-weight: 400;
+	/* color: #2e80ce; */
+	margin-top: 18px;
+}
+
+/* about us */
+
+.about {
+	padding: 170px 0;
+}
+
+.about .raw {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 125px;
+}
+
+.about__img--item {
+	display: flex;
+	object-fit: cover;
+}
+
+.about__img--item.img-1 {
+	width: 512px;
+	height: 370px;
+	border-radius: 6px;
+	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.about__img--item.img-2 {
+	margin-top: -249px;
+	margin-left: 240px;
+	width: 332px;
+	height: 370px;
+	border-radius: 6px;
+}
+
+.about__heading {
+	display: inline-flex;
+	text-align: left;
+	margin-bottom: 18px;
+}
+
+.about__action {
+	margin-top: 38px;
+}
+
+/* team */
+
+.team__action.action-1 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+.team__gallery {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.gallery__item--img {
+	width: 262px;
+	height: 290px;
+	border-radius: 6px;
+	object-fit: cover;
+}
+
+.gallery__item--desc {
+	color: #10375c;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.75;
+	margin-top: 20px;
+}
+
+.gallery__item--sm-desc {
+	display: block;
+	color: #575f66;
+	text-align: center;
+	font-family: Sora;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 1.86;
+}
+
+.team__action.action-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 38px;
+	gap: 18px;
+}
+
+.team__action--btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #575f66;
+}
+
+.team__action--btn:hover {
+	background-color: #2e80ce;
+	color: #fff;
+	border: none;
 }
