@@ -38,12 +38,14 @@
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<!-- style css -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
 				<div class="header-top">
-					<img src="./assets/icons/logo.svg" alt="" class="logo" />
+					<img src="./assets/icons/logo.svg" alt="" class="logo header__logo" />
 					<nav class="navbar">
 						<ul class="navbar__list">
 							<li class="navbar__item">
@@ -101,6 +103,43 @@
 				</div>
 			</div>
 		</header>
+
+		<!-- mobile header -->
+		<div class="mobile-header">
+			<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+			<label for="menu-checkbox" class="header__menu">
+				<ion-icon name="grid-outline" class="header__menu--icon"></ion-icon>
+			</label>
+			<label for="menu-checkbox" class="menu-overlay"></label>
+
+			<div class="mobile-navbar">
+				<div class="navbar__header">
+					<img src="./assets/icons/logo.svg" alt="" class="logo mobile__logo" />
+					<label for="menu-checkbox">
+						<ion-icon name="close-circle-outline" class="menu__close"></ion-icon>
+					</label>
+				</div>
+				<div class="menu__navbar">
+					<ul class="mobile-navbar__list">
+						<li class="mobile-navbar__item">
+							<a class="mobile-navbar__link sm-desc" href="#">Trang chủ</a>
+						</li>
+						<li class="mobile-navbar__item">
+							<a class="mobile-navbar__link sm-desc" href="#">Giới thiệu</a>
+						</li>
+						<li class="mobile-navbar__item">
+							<a class="mobile-navbar__link sm-desc" href="#">Tin tức</a>
+						</li>
+						<li class="mobile-navbar__item">
+							<a class="mobile-navbar__link sm-desc" href="#">Sản phẩm</a>
+						</li>
+						<li class="mobile-navbar__item">
+							<a class="mobile-navbar__link sm-desc" href="#">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 		<main class="main">
 			<!-- service -->
@@ -563,5 +602,11 @@
 				</div>
 			</div>
 		</footer>
+		<!-- ionicons -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
